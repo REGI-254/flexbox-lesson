@@ -1,30 +1,20 @@
-* {
-  box-sizing: border-box;
-}
 
 .container {
   display: flex;
   background-color: lightgray;
   padding: 10px; 
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 10px;
+  column-gap: 10px;
+   
 }
 
 .box {
   background-color: dodgerblue;
   color: white;
   padding: 20px;
-  margin: 10px;
   font-size: 18px;
-  flex: 1; 
-}
-
-.box-one {
-  flex: 2;
-}
-
-.box-two {
-  flex: 1;
-}
-
-.box-three {
-  flex: 1;
+  width: 200px;
+  
 }
