@@ -1,22 +1,27 @@
 
+* {
+  box-sizing: border-box;  
+}
+
 .container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
   background-color: lightgray;
   padding: 10px;   
-  height: 500px;
+  height: 300px;
 }
 
 .box {
   background-color: dodgerblue;
   color: white;
-  padding: 20px;
-  margin:10px; 
+  padding: 20px; 
   font-size: 18px;
-  width: 200px;
-  flex: 1 1 auto; 
+  width: 100px;
 }
 
 .box:nth-child(2) {
-  flex-shrink: 2;
+  align-self: flex-end; 
 }
